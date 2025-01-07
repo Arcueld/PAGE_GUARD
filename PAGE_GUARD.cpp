@@ -4,8 +4,6 @@
 #include <detours.h>
 
 
-#pragma comment(lib, "detours.lib") 
-
 static LPVOID lastGuardAddress = nullptr;
 
 
