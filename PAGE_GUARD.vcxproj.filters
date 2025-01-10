@@ -18,10 +18,44 @@
     <ClCompile Include="PAGE_GUARD.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="checkVM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="helper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="loader.h">
+    <ClInclude Include="definition.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="checkVM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PAGE_GUARD1.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Tools\key.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="Tools\shellcode.ico">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>

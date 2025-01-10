@@ -129,18 +129,35 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <AdditionalDependencies>D:\PenTestTools\Detours-4.0.1\lib.X64\detours.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PreBuildEvent>
+      <Command>"$(SolutionDir)Tools\genShellcode.bat"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="checkVM.cpp" />
+    <ClCompile Include="helper.cpp" />
+    <ClCompile Include="hooks.cpp" />
     <ClCompile Include="PAGE_GUARD.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="loader.h" />
+    <ClInclude Include="checkVM.h" />
+    <ClInclude Include="definition.h" />
+    <ClInclude Include="helper.h" />
+    <ClInclude Include="hooks.h" />
+    <ClInclude Include="resource1.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PAGE_GUARD1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Tools\key.ico" />
+    <Image Include="Tools\shellcode.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
